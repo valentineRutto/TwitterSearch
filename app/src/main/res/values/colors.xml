@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-    <resources>
-        <color name="toolbar_title">#ffffff</color>
-        <color name="colorPrimary">#00002B</color>
-        <color name="colorPrimaryDark">#18093F</color>
-        <color name="colorAccent">#fff</color>
-        <color name="control_normal">#464A69</color>
-        <color name="fab_pressed">#464A69</color>
-        <color name="background">#000038</color>
-    </resources>
-
+<resources>
+    <color name="toolbar_title">#ffffff</color>
+    <color name="colorPrimary">#00002B</color>
+    <color name="colorPrimaryDark">#18093F</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="control_normal">#464A69</color>
+    <color name="fab_pressed">#464A69</color>
+    <color name="background">#000038</color>
+</resources>

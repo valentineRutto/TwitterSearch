@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Twitter Search</string>
+    <string name="app_name">EasyTwitterSearch</string>
     <string name="input_search_terms">Search...</string>
 
     <string name="base_url">https://api.twitter.com/</string>

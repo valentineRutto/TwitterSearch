@@ -1,4 +1,4 @@
-package com.ValentineRutto.SearchTwitter.network.models;
+package com.ValentineRutto.SearchTwitter.models;
 
 import android.text.TextUtils;
 

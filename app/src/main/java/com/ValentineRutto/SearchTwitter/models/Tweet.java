@@ -3,8 +3,6 @@ package com.ValentineRutto.SearchTwitter.models;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.ValentineRutto.SearchTwitter.network.models.TweetStatuses;
-
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;

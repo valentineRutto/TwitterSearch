@@ -52,6 +52,8 @@ public class TweetListAdapter extends AnimatedRecyclerViewAdapter<TweetListAdapt
             Glide.with(mContext).load(imageUrl).centerCrop().into(holder.imageView);
             holder.imageView.setVisibility(View.VISIBLE);
         }
+
+
     }
 
     @Override

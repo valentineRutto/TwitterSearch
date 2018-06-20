@@ -8,8 +8,8 @@ import android.util.Base64;
 import com.ValentineRutto.SearchTwitter.models.Tweet;
 import com.ValentineRutto.SearchTwitter.network.DateDeserializer;
 import com.ValentineRutto.SearchTwitter.network.TwitterApi;
-import com.ValentineRutto.SearchTwitter.network.models.Oauth2Token;
-import com.ValentineRutto.SearchTwitter.network.models.TweetStatuses;
+import com.ValentineRutto.SearchTwitter.models.Oauth2Token;
+import com.ValentineRutto.SearchTwitter.models.TweetStatuses;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

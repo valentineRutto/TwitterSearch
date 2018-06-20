@@ -1,7 +1,7 @@
 package com.ValentineRutto.SearchTwitter.network;
 
-import com.ValentineRutto.SearchTwitter.network.models.Oauth2Token;
-import com.ValentineRutto.SearchTwitter.network.models.TweetStatuses;
+import com.ValentineRutto.SearchTwitter.models.Oauth2Token;
+import com.ValentineRutto.SearchTwitter.models.TweetStatuses;
 
 import retrofit2.Call;
 import retrofit2.http.Field;

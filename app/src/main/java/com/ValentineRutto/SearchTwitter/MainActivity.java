@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mFragment = (SearchFragment) getSupportFragmentManager().findFragmentById(R.id.searchFragment);
-        if (savedInstanceState != null) {
+        if (savedInstanceState  != null) {
             mLastSubmittedQuery = savedInstanceState.getString(QUERY_KEY);
         }
     }

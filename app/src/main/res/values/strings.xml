@@ -11,13 +11,16 @@
     <string name="hours">%1$d hours ago</string>
     <string name="days">%1$d days ago</string>
 
-    <string name="help_title">Welcome to Twitter Search.</string>
-    <string name="help_subtitle">Try searching something!</string>
+    <string name="help_title">Welcome to Easy Twitter Search.</string>
+    <string name="help_subtitle">Search Anything!</string>
 
     <string name="empty_title">No tweets were found!</string>
     <string name="empty_subtitle">Please, try with a different search.</string>
 
     <string name="error_title">There was an error loading the tweets.</string>
     <string name="error_subtitle">Please retry!</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="action_settings">Settings</string>
 
 </resources>

@@ -1,11 +1,13 @@
 package com.ValentineRutto.SearchTwitter.adapters;
 
 import android.content.Context;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -39,8 +41,9 @@ public class TweetListAdapter extends AnimatedRecyclerViewAdapter<TweetListAdapt
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
-        super.onBindViewHolder(holder, position);
+    public void onBindViewHolder(ViewHolder holder, final int position) {
+//        super.onBindViewHolder(holder, position);
+
         Tweet tweet = mTweetList.get(position);
         holder.content.setText(tweet.getContent());
         holder.createdAt.setText(mFormatter.format(mContext, tweet.getCreatedAt()));
@@ -53,10 +56,43 @@ public class TweetListAdapter extends AnimatedRecyclerViewAdapter<TweetListAdapt
             holder.imageView.setVisibility(View.VISIBLE);
         }
 
+  holder.content.setText(mTweetList.get(position).getContent());
+  holder.content.setOnClickListener(new View.OnClickListener(){
+
+      @Override
+      public void onClick(View v) {
+          Tweet tweet = mTweetList.get(position);
+          WebView wv = new WebView(mContext);
+          wv.loadUrl(String.valueOf(tweet));
+          AlertDialog.Builder alert = new AlertDialog.Builder(mContext);
+//            wv.setWebViewClient(new WebViewClient() {
+//                @Override
+//                public boolean shouldOverrideUrlLoading(WebView view, String url) {
+//                    view.loadUrl(url);
+//                    return true;
+//                }
+
+      }
+  });
 
     }
+//     holder.title.setText(list.get(position).Title);
+//        holder.title.setOnClickListener(new View.OnClickListener() {
+//        @Override
+//        public void onClick(View v) {
+//            String url=list.get(position).Url;
+//            WebView wv = new WebView(context);
+//            wv.loadUrl(url);
+//            AlertDialog.Builder alert = new AlertDialog.Builder(context);
+//            wv.setWebViewClient(new WebViewClient() {
+//                @Override
+//                public boolean shouldOverrideUrlLoading(WebView view, String url) {
+//                    view.loadUrl(url);
+//                    return true;
+//                }
 
-    @Override
+
+                @Override
     public int getItemCount() {
         return mTweetList == null ? 0 : mTweetList.size();
     }

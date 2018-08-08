@@ -1,2 +1,2 @@
 # TwitterSearch
-Easy twitter search
+An android application consuming twitter search API 
